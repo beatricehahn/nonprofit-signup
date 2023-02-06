@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/weingart.css">
+
+    <title>Weingart Portal</title>
+</head>
+<body>
+    <header>
+        <h2>Weingart Center Employee Portal</h2>
+    </header>
+    <main>
+        <form action="weigart/account/setup/path" method="post">
+            <legend>Create an Account</legend>
+            <fieldset>
+                <label for="first_name">First Name</label>
+                <input type="text" id="first_name" name="first_name" placeholder="Joseph" required>
+    
+                <label for="last_name">Last Name</label>
+                <input type="text" id="last_name" name="last_name" placeholder="Castle" required>
+    
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="jcastle@gmail.com" required>
+                
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" minlength="8" maxlength="16" placeholder="********" required>
+            </fieldset>
+
+            <button type="submit" id="createAccount">Create Account</button>
+        </form>
+        <img src="./img/building.png" alt="An image of the Weingart Center Building">
+    </main>
+</body>
+</html>
